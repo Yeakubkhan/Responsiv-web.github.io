@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.heading-wrapper {
+  display: flex;
+  gap: 16px;
+}
+.heading {
+  text-align: center;
+  color: red;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+@media (max-width: 992px) {
+  .heading {
+    text-align: start;
+    font-size: 30px;
+  }
+  .heading-wrapper {
+    flex-direction: column;
+  }
+  .list-items {
+    flex-direction: column;
+  }
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .heading {
+    color: green;
+    text-align: center;
+    font-size: 16px;
+  }
+  .heading-wrapper {
+    gap: 2px;
+  }
+  .list-items {
+    flex-direction: column;
+  }
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.icon-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: red;
+  background-color: antiquewhite;
+}
+.name_input {
+  outline: none;
+  border: 1px solid rgba(7, 44, 255, 0.84);
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+.name_input:focus {
+  border: 1px solid green;
+}
+.inut-lav {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 5px;
+  font-size: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 4px;
+}
+
+/* menu */
+
+.menu {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+.list-link {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #1df42f;
+  padding: 5px 10px;
+  border: 1px solid #1df42f;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.list-link:hover {
+  background-color: #1df42f;
+  color: white;
+}
